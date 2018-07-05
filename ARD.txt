@@ -1,0 +1,31 @@
+1) Jak pod³¹czyæ LCD do Arduino + Miernik Natê¿enia Œwiat³a
+
+
+-co z tym fotorezystorem?
+-do kontrastu wyœwietlacza najlepiej potencjometr 10-20k
+
+2) Jak pod³¹czyæ silnik do Arduino za pomoc¹ tranzystora
+
+-przy pod³¹czaniu np. 12V silnika przez Ard, gdybyœmy zrobili to bezpoœrednio ( + silnika do 12V, - silnika do wyjœcia Ard) to du¿y pr¹d spali³by nam uk³ad. Robimy to przez tranzystor NPN: z wyjœcia Ard na rezystor 10K, potem na B NPN, E NPN do masy, a C NPN do - silnika. Poza tym równolegle do silnika dajemy diodê (krecha/katoda do +12V) ze wzglêdu na du¿e napiêcia powstaj¹ce przy roz³¹czaniu cewki. Pamiêtaæ trzeba te¿ o po³¹czeniu masy z zasilania silnika i masy Ard.
+-Dioda schottky'ego ma mniejsze czasy prze³¹czania, wiêc sprawdza siê lepiej w przypadku uk³adów z PWM oraz generowaniem czêstotliwoœci np. funkcj¹ tone(). Diody prostownicze przystosowane s¹ do czêstotliwoœci sieciowych 50Hz
+
+3) Knight Rider na Arduino
+
+4) Jak zrobiæ kostkê do gry na Arduino
+
+5) Jak zrobic dzwiekowy wylacznik swiatla na Arduino
+
+6) Jak wykonaæ ultradŸwiêkowy czujnik zbli¿eniowy na Arduino?
+
+7) Jak zbudowac prosty barometr za pomoc¹ BMP180 i Arduino?
+
+-ARD ma dedykowane piny dla I2C
+
+8)->70) Jak pod³¹czyæ LCD do Arduino z u¿yciem konwertera I2C?
+
+-przy u¿ywaniu magistrali I2C, piny analogowe A4 i A5 nie dzia³aj¹ poprawnie
+-biblioteki dodajemy przez library manager wbudowany w program do ARD
+-wa¿ny jest adres przejœciówki I2C
+
+12) Jak sterowaæ Arduino za pomoc¹ pilota? Podstawowe sterowanie IR (TSOP2236)
+-nie ogl¹dane, tresz xD
